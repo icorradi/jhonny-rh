@@ -1,0 +1,22 @@
+{
+  "name": "rh",
+  "version": "0.0.0",
+  "homepage": "https://github.com/icorradi/jhonny-rh",
+  "authors": [
+    "Igor Corradi <igorcorradi.dev@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "~0.6.0",
+    "angular": "1.5.2",
+    "angular-route": "~1.5.3",
+    "angular-mask": "~3.0.16"
+  }
+}

@@ -1,0 +1,43 @@
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+}
+
+.rh-table {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.rh-tr {
+  cursor: pointer;
+}
+
+.rh-tr:hover {
+  background: #EFEFEF;
+}
+
+.rh-warning {
+  font-size: 12px;
+}
+
+.button-small {
+  font-size: 85%;
+}
+
+.button-green {
+  background: #d3eda3;
+  color: #72962e;
+}
+
+.rh-register-buttons {
+  margin-top: 20px;
+  clear: both;
+}
+
+.rh-register-area-input {
+  float: left;
+  margin: 10px 20px 10px 0;
+  height: 75px;
+}

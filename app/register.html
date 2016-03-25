@@ -1,0 +1,76 @@
+<h1>RH - Registro de Funcionários</h1>
+<form class="pure-form pure-form-stacked" ng-submit="register()">
+    <fieldset>
+        <legend>Formulário de registro</legend>
+
+        <div class="rh-register-area-input">
+          <label for="nome">Nome:</label>
+          <input id="nome" type="text" placeholder="Nome" ng-model="employer.name" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="cpf">CPF:</label>
+          <input id="cpf" type="text" mask="999.999.999-99" placeholder="999.999.999-99" ng-model="employer.cpf" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="rg">RG:</label>
+          <input id="rg" type="text" mask="99.999.999" placeholder="99.999.999" ng-model="employer.RG" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="nascimento">Nascimento:</label>
+          <input id="nascimento" type="text" ng-model="employer.birth" mask="99/99/9999" placeholder="00/00/0000" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="endereco">Endereço:</label>
+          <input id="endereco" type="text" placeholder="Rua/Av..." ng-model="employer.street" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="bairro">Bairro:</label>
+          <input id="bairro" type="text" placeholder="Bairro" ng-model="employer.district" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="cep">CEP:</label>
+          <input id="cep" type="text" placeholder="99999-999" mask="99999-999" ng-model="employer.zipcode" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="cidade">Cidade:</label>
+          <input id="cidade" type="text" placeholder="Cidade" ng-model="employer.city" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="tel">Telefone:</label>
+          <input id="tel" type="text" placeholder="(99) 9999-9999" mask="(99) 9999-9999" ng-model="employer.phone" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="cargo">Cargo:</label>
+          <input id="cargo" type="text" placeholder="Cargo" ng-model="employer.position" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="salario">Salário:</label>
+          <input id="salario" type="text" placeholder="9999,99" mask="9999,99" ng-model="employer.salary" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="admissao">Admissão:</label>
+          <input id="admissao" type="text" ng-model="employer.admission" mask="99/99/9999" placeholder="00/00/0000" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="empresa">Empresa:</label>
+          <input id="empresa" type="text" placeholder="Empresa" ng-model="employer.company" required>
+        </div>
+
+        <div class="rh-register-buttons">
+          <button type="submit" class="pure-button pure-button-primary">Registrar</button>
+          <a href="#/" class="pure-button">Voltar</a>
+        </div>
+    </fieldset>
+</form>
