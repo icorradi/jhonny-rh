@@ -20,7 +20,7 @@ $ source jhonny-rh/bin/activate
 ```
 $ git clone https://github.com/icorradi/jhonny-rh
 
-$ cd jhonny-rh && pip install -r requirements.txt
+$ cd jhonny-rh && pip install -r requirements.txt && bower install
 ```
 
 #### Rode o servidor:
