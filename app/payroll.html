@@ -1,0 +1,49 @@
+<h1>RH - Folha de pagamento - {{ d.employer.name }}</h1>
+<table class="pure-table rh-table">
+    <thead>
+        <tr>
+            <th>{{d.employer.name}}</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr class="rh-tr">
+          <td>Faltas</td>
+          <td>{{ d.employer.shortages }}</td>
+        </tr>
+        <tr class="rh-tr">
+          <td>Adicional Noturno</td>
+          <td>{{ d.employer.night }}</td>
+        </tr>
+        <tr class="rh-tr">
+          <td>Hora extra</td>
+          <td>{{ d.employer.extra_time }}</td>
+        </tr>
+        <tr class="rh-tr">
+          <td>Comissão</td>
+          <td>{{ d.employer.commission }}</td>
+        </tr>
+        <tr class="rh-tr">
+          <td>Adiantamento</td>
+          <td>{{ d.employer.advance_payment }}</td>
+        </tr>
+        <tr class="rh-tr">
+          <td>Data de pagamento</td>
+          <td>{{ d.employer.payment_date }}</td>
+        </tr>
+        <tr class="rh-tr">
+          <td>Valor descontado</td>
+          <td>{{ d.employer.discounted }}</td>
+        </tr>
+        <tr class="rh-tr">
+          <td>Observação</td>
+          <td>{{ d.employer.observation }}</td>
+        </tr>
+        <tr class="rh-tr">
+          <td>Pagamento total</td>
+          <td>{{ d.employer.total_payment }}</td>
+        </tr>
+    </tbody>
+</table>
+<a href="#/" class="pure-button pure-button-primary">Voltar</a>

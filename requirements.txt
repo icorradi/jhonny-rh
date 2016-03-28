@@ -1,0 +1,2 @@
+CherryPy==5.1.0
+pymongo==3.2.2

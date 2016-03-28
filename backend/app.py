@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import cherrypy
+import random
 from pymongo import MongoClient
 from bson.json_util import dumps
 from bson.objectid import ObjectId
@@ -44,11 +45,20 @@ class Employees(object):
             }
         )
 
-        # Create blank payroll for this new employer
+        # Create FAKE payroll for this new employer
         db.payroll.insert_one(
             {
                 'employer_id': result.inserted_id,
-                'name': kwargs['name'] if 'name' in kwargs else ''
+                'name': kwargs['name'] if 'name' in kwargs else '',
+                'shortages': random.randrange(0, 15, 2),
+                'night': 0,
+                'extra_time': random.randrange(0, 5, 2),
+                'commission': 0,
+                'advance_payment': 0,
+                'payment_date': '12/05/2016',
+                'discounted': '74,80',
+                'observation': 'Lorem ipsum solor sit amet',
+                'total_payment': kwargs['salary']
             }
         )
 
@@ -71,7 +81,6 @@ class Payroll(object):
         if id:
             result = db.payroll.find({'employer_id': ObjectId(id)})
         else:
-            result = db.payroll.find()
-
+            raise cherrypy.HTTPError(403)
 
         return dumps(result)
