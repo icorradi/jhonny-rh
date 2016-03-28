@@ -1,7 +1,7 @@
 # Jhonny-RH
 
 Pré-requisitos
-- Python 2.7
+- Python 2 (não testei no 3)
 - MongoDB
 
 #### Como iniciar:
