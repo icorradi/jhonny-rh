@@ -1,5 +1,9 @@
 # Jhonny-RH
 
+Pré-requisitos
+- Python 2.7
+- MongoDB
+
 #### Como iniciar:
 
 Instale o virtualenv
@@ -15,6 +19,12 @@ Ative-o
 ```
 $ source jhonny-rh/bin/activate
 ```
+
+Crie um novo Banco no mongo
+```
+$ mongo rh
+```
+\*`ctrl+d` para sair
 
 #### Clone o projeto e instale as dependências:
 ```
