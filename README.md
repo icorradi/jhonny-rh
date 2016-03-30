@@ -13,11 +13,11 @@ $ [sudo] pip install virtualenv
 
 Crie um novo ambiente
 ```
-$ virtualenv jhonny-rh
+$ virtualenv rh
 ```
 Ative-o
 ```
-$ source jhonny-rh/bin/activate
+$ source rh/bin/activate
 ```
 
 Crie um novo Banco no mongo
@@ -30,7 +30,9 @@ $ mongo rh
 ```
 $ git clone https://github.com/icorradi/jhonny-rh
 
-$ cd jhonny-rh && pip install -r requirements.txt && bower install
+$ cd jhonny-rh && pip install -r requirements.txt
+
+$ bower install
 ```
 
 #### Rode o servidor:
