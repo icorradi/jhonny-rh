@@ -59,6 +59,16 @@
         </div>
 
         <div class="rh-register-area-input">
+          <label for="salario">Utiliza vale-transporte:</label>
+          <input id="salario" type="text" placeholder="Sim/Não" ng-model="employer.allowace" required>
+        </div>
+
+        <div class="rh-register-area-input">
+          <label for="salario">Valor do vale:</label>
+          <input id="salario" type="text" placeholder="999,99" mask="9999,99" ng-model="employer.allowace_value" required>
+        </div>
+
+        <div class="rh-register-area-input">
           <label for="admissao">Admissão:</label>
           <input id="admissao" type="text" ng-model="employer.admission" mask="99/99/9999" placeholder="00/00/0000" required>
         </div>

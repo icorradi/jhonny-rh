@@ -58,18 +58,11 @@ class Employees(object):
                 'payment_date': '12/05/2016',
                 'discounted': '74,80',
                 'observation': 'Lorem ipsum solor sit amet',
-                'total_payment': kwargs['salary']
+                'total_payment': kwargs['salary'],
+                'allowace': kwargs['allowace'],
+                'allowace_value': kwargs['allowace_value']
             }
         )
-
-        # Create blank transportation allowance for this new employer
-        db.allowance.insert_one(
-            {
-                'employer_id': result.inserted_id,
-                'name': kwargs['name'] if 'name' in kwargs else ''
-            }
-        )
-
 
         return dumps(result.inserted_id)
 
