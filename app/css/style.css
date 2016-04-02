@@ -31,6 +31,16 @@ body {
   color: #72962e;
 }
 
+.button-red {
+  background: #EDA3A3;
+  color: #962E2E;
+}
+
+.button-blue {
+  background: rgb(163, 199, 237);
+  color: rgb(30, 96, 195);
+}
+
 .rh-register-buttons {
   margin-top: 20px;
   clear: both;

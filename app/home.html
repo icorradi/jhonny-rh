@@ -6,7 +6,7 @@
             <th>Nome</th>
             <th>CPF</th>
             <th>RG</th>
-            <th></th>
+            <th>Folha de pagamento</th>
         </tr>
     </thead>
 
@@ -16,7 +16,9 @@
           <td>{{ employer.cpf }}</td>
           <td>{{ employer.RG }}</td>
           <td>
-            <a href="#/payroll/{{employer._id.$oid}}" class="button-small button-green pure-button">Folha de pagamento</a>
+            <a href="#/payroll/{{employer._id.$oid}}" class="button-small button-green pure-button">Ver</a>
+            <a href="#/payroll/{{employer._id.$oid}}?editable=true" class="button-small button-blue pure-button">Alterar</a>
+            <button ng-click="delete(employer._id.$oid)" class="button-small button-red pure-button">Excluir</button>
           </td>
         </tr>
     </tbody>
